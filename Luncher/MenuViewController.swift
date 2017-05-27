@@ -32,5 +32,9 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "MenuSegue", sender: self)
+    }
 }
 
