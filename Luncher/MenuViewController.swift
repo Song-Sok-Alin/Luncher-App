@@ -10,6 +10,9 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var SearchBar: UISearchBar!
+    @IBOutlet weak var TableView: UITableView!
+    
     let foodimage = ["pizza", "fried rice"]
     let food = ["Pizza seafood extra cheesy sausage", "Fried rice with octupus and green bean"]
     let Restaurant = ["Pizza Company", "BrewHouse"]
