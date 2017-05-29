@@ -9,10 +9,17 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    var foodimage: UIImage!
+    var foodnameString: String!
+    var ingredientString: String!
+    var priceString: String!
+    var deliveryString: String!
+    var restoString: String!
+    
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var FoodNameLabel: UILabel!
-    @IBOutlet weak var DescriptionLabel: UILabel!
+    @IBOutlet weak var IngredientLabel: UILabel!
     @IBOutlet weak var PriceLabel: UILabel!
     @IBOutlet weak var QtyTextField: UITextField!
     @IBOutlet weak var DeliveryLabel: UILabel!
@@ -21,6 +28,13 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Image.image = foodimage
+        FoodNameLabel.text = foodnameString
+        IngredientLabel.text = ingredientString
+        PriceLabel.text = priceString
+        DeliveryLabel.text = deliveryString
+        RestoLabel.text = restoString
         
     }
 
