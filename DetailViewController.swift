@@ -41,6 +41,7 @@ class DetailViewController: UIViewController {
     @IBAction func DeliveryTimeButton(_ sender: Any) {
     }
     @IBAction func OrderButton(_ sender: Any) {
+        performSegue(withIdentifier: "showSignUp", sender: nil)
     }
     @IBAction func AddButton(_ sender: Any) {
     }
