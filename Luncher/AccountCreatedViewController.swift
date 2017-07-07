@@ -16,4 +16,8 @@ class AccountCreatedViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         // self.navigationController?.isNavigationBarHidden = true
     }
+    
+    @IBAction func ContinueButton(_ sender: Any) {
+        performSegue(withIdentifier: "SuccessfulSignUpSegue", sender: nil)
+    }
 }

@@ -7,35 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F7144B91EBA02AA00499A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7144B81EBA02AA00499A1D /* AppDelegate.swift */; };
+		10352F1FA815480EA6751AF4 /* Pods_Luncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7902456C8413B2F87234AA3E /* Pods_Luncher.framework */; };
 		3F7144BB1EBA02AA00499A1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7144BA1EBA02AA00499A1D /* MenuViewController.swift */; };
 		3F7144C01EBA02AA00499A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7144BF1EBA02AA00499A1D /* Assets.xcassets */; };
 		3F7144C31EBA02AA00499A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7144C11EBA02AA00499A1D /* LaunchScreen.storyboard */; };
 		6516F2F31EDB262D00326C92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516F2F21EDB262D00326C92 /* DetailViewController.swift */; };
 		654002A01ED5EA21008338D1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6540029F1ED5EA21008338D1 /* MenuTableViewCell.swift */; };
+		6568D9651F0E4A1F00670651 /* MyCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */; };
+		6568D9671F0E4AFD00670651 /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6568D9661F0E4AFD00670651 /* MyCartViewController.swift */; };
 		657850AC1EFCD3B60055D0B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AB1EFCD3B60055D0B5 /* SignUpViewController.swift */; };
 		657850AE1EFCECC30055D0B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AD1EFCECC30055D0B5 /* LoginViewController.swift */; };
 		657850B01EFCEE1A0055D0B5 /* AccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */; };
 		658E40D51EDBE73000E38917 /* RestoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E40D41EDBE73000E38917 /* RestoTableViewCell.swift */; };
 		658E40D71EDBE83300E38917 /* RestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E40D61EDBE83300E38917 /* RestoViewController.swift */; };
 		659600401ED58C92006ED6E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6596003E1ED58C92006ED6E6 /* Main.storyboard */; };
+		65F99CBA1F0A226A006DF977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F99CB91F0A226A006DF977 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34FC0EA4D4E1AC0F33859160 /* Pods-Luncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luncher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Luncher/Pods-Luncher.release.xcconfig"; sourceTree = "<group>"; };
 		3F7144B51EBA02AA00499A1D /* Luncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F7144B81EBA02AA00499A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7144BA1EBA02AA00499A1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3F7144BF1EBA02AA00499A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7144C21EBA02AA00499A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7144C41EBA02AA00499A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6516F2F21EDB262D00326C92 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		6540029F1ED5EA21008338D1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartTableViewCell.swift; sourceTree = "<group>"; };
+		6568D9661F0E4AFD00670651 /* MyCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
 		657850AB1EFCD3B60055D0B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		657850AD1EFCECC30055D0B5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCreatedViewController.swift; sourceTree = "<group>"; };
 		658E40D41EDBE73000E38917 /* RestoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestoTableViewCell.swift; path = ../RestoTableViewCell.swift; sourceTree = "<group>"; };
 		658E40D61EDBE83300E38917 /* RestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestoViewController.swift; sourceTree = "<group>"; };
 		6596003F1ED58C92006ED6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65F99CB91F0A226A006DF977 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7902456C8413B2F87234AA3E /* Pods_Luncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Luncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FA38EFCA438ED9F503EEE2 /* Pods-Luncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luncher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Luncher/Pods-Luncher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10352F1FA815480EA6751AF4 /* Pods_Luncher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +63,8 @@
 			children = (
 				3F7144B71EBA02AA00499A1D /* Luncher */,
 				3F7144B61EBA02AA00499A1D /* Products */,
+				AE40BFF5363323CABA9270F2 /* Pods */,
+				99DCD6DFCB7580EC3810F510 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +79,7 @@
 		3F7144B71EBA02AA00499A1D /* Luncher */ = {
 			isa = PBXGroup;
 			children = (
-				3F7144B81EBA02AA00499A1D /* AppDelegate.swift */,
+				65F99CB91F0A226A006DF977 /* AppDelegate.swift */,
 				3F7144BA1EBA02AA00499A1D /* MenuViewController.swift */,
 				6540029F1ED5EA21008338D1 /* MenuTableViewCell.swift */,
 				6516F2F21EDB262D00326C92 /* DetailViewController.swift */,
@@ -77,12 +88,31 @@
 				657850AB1EFCD3B60055D0B5 /* SignUpViewController.swift */,
 				657850AD1EFCECC30055D0B5 /* LoginViewController.swift */,
 				657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */,
+				6568D9661F0E4AFD00670651 /* MyCartViewController.swift */,
+				6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */,
 				6596003E1ED58C92006ED6E6 /* Main.storyboard */,
 				3F7144BF1EBA02AA00499A1D /* Assets.xcassets */,
 				3F7144C11EBA02AA00499A1D /* LaunchScreen.storyboard */,
 				3F7144C41EBA02AA00499A1D /* Info.plist */,
 			);
 			path = Luncher;
+			sourceTree = "<group>";
+		};
+		99DCD6DFCB7580EC3810F510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7902456C8413B2F87234AA3E /* Pods_Luncher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE40BFF5363323CABA9270F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA38EFCA438ED9F503EEE2 /* Pods-Luncher.debug.xcconfig */,
+				34FC0EA4D4E1AC0F33859160 /* Pods-Luncher.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F7144C71EBA02AA00499A1D /* Build configuration list for PBXNativeTarget "Luncher" */;
 			buildPhases = (
+				B02BA291B08DF176EDD2B535 /* [CP] Check Pods Manifest.lock */,
 				3F7144B11EBA02AA00499A1D /* Sources */,
 				3F7144B21EBA02AA00499A1D /* Frameworks */,
 				3F7144B31EBA02AA00499A1D /* Resources */,
+				FD6577FBBEB579B920A0F7F5 /* [CP] Embed Pods Frameworks */,
+				C36907A6BED09DA379D68218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +186,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B02BA291B08DF176EDD2B535 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C36907A6BED09DA379D68218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luncher/Pods-Luncher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD6577FBBEB579B920A0F7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Luncher/Pods-Luncher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F7144B11EBA02AA00499A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,10 +242,12 @@
 				658E40D71EDBE83300E38917 /* RestoViewController.swift in Sources */,
 				657850AC1EFCD3B60055D0B5 /* SignUpViewController.swift in Sources */,
 				3F7144BB1EBA02AA00499A1D /* MenuViewController.swift in Sources */,
+				65F99CBA1F0A226A006DF977 /* AppDelegate.swift in Sources */,
+				6568D9671F0E4AFD00670651 /* MyCartViewController.swift in Sources */,
 				657850B01EFCEE1A0055D0B5 /* AccountCreatedViewController.swift in Sources */,
-				3F7144B91EBA02AA00499A1D /* AppDelegate.swift in Sources */,
 				657850AE1EFCECC30055D0B5 /* LoginViewController.swift in Sources */,
 				654002A01ED5EA21008338D1 /* MenuTableViewCell.swift in Sources */,
+				6568D9651F0E4A1F00670651 /* MyCartTableViewCell.swift in Sources */,
 				658E40D51EDBE73000E38917 /* RestoTableViewCell.swift in Sources */,
 				6516F2F31EDB262D00326C92 /* DetailViewController.swift in Sources */,
 			);
@@ -287,6 +370,7 @@
 		};
 		3F7144C81EBA02AA00499A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FA38EFCA438ED9F503EEE2 /* Pods-Luncher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L55V7BB6S4;
@@ -301,6 +385,7 @@
 		};
 		3F7144C91EBA02AA00499A1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FC0EA4D4E1AC0F33859160 /* Pods-Luncher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L55V7BB6S4;

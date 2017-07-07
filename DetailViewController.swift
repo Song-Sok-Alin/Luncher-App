@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class DetailViewController: UIViewController {
     
@@ -41,7 +43,12 @@ class DetailViewController: UIViewController {
     @IBAction func DeliveryTimeButton(_ sender: Any) {
     }
     @IBAction func OrderButton(_ sender: Any) {
-        performSegue(withIdentifier: "showSignUp", sender: nil)
+        if FBSDKAccessToken.current() == nil {
+            performSegue(withIdentifier: "showSignUp", sender: nil)
+        } else {
+            print("user already login")
+            performSegue(withIdentifier: "ShowMyCartSegue3", sender: nil)
+        }
     }
     @IBAction func AddButton(_ sender: Any) {
     }
