@@ -18,6 +18,9 @@
 		657850AC1EFCD3B60055D0B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AB1EFCD3B60055D0B5 /* SignUpViewController.swift */; };
 		657850AE1EFCECC30055D0B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AD1EFCECC30055D0B5 /* LoginViewController.swift */; };
 		657850B01EFCEE1A0055D0B5 /* AccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */; };
+		658B3A171F14F0EF002A661E /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B3A161F14F0EF002A661E /* DeliveryViewController.swift */; };
+		658B3A191F14F284002A661E /* paymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B3A181F14F284002A661E /* paymentTableViewCell.swift */; };
+		658B3A1B1F14F2A2002A661E /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B3A1A1F14F2A2002A661E /* paymentViewController.swift */; };
 		658E40D51EDBE73000E38917 /* RestoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E40D41EDBE73000E38917 /* RestoTableViewCell.swift */; };
 		658E40D71EDBE83300E38917 /* RestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E40D61EDBE83300E38917 /* RestoViewController.swift */; };
 		659600401ED58C92006ED6E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6596003E1ED58C92006ED6E6 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 		657850AB1EFCD3B60055D0B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		657850AD1EFCECC30055D0B5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCreatedViewController.swift; sourceTree = "<group>"; };
+		658B3A161F14F0EF002A661E /* DeliveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		658B3A181F14F284002A661E /* paymentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentTableViewCell.swift; sourceTree = "<group>"; };
+		658B3A1A1F14F2A2002A661E /* paymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		658E40D41EDBE73000E38917 /* RestoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestoTableViewCell.swift; path = ../RestoTableViewCell.swift; sourceTree = "<group>"; };
 		658E40D61EDBE83300E38917 /* RestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestoViewController.swift; sourceTree = "<group>"; };
 		6596003F1ED58C92006ED6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				657850AF1EFCEE1A0055D0B5 /* AccountCreatedViewController.swift */,
 				6568D9661F0E4AFD00670651 /* MyCartViewController.swift */,
 				6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */,
+				658B3A161F14F0EF002A661E /* DeliveryViewController.swift */,
+				658B3A1A1F14F2A2002A661E /* paymentViewController.swift */,
+				658B3A181F14F284002A661E /* paymentTableViewCell.swift */,
 				6596003E1ED58C92006ED6E6 /* Main.storyboard */,
 				3F7144BF1EBA02AA00499A1D /* Assets.xcassets */,
 				3F7144C11EBA02AA00499A1D /* LaunchScreen.storyboard */,
@@ -239,9 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658B3A191F14F284002A661E /* paymentTableViewCell.swift in Sources */,
 				658E40D71EDBE83300E38917 /* RestoViewController.swift in Sources */,
 				657850AC1EFCD3B60055D0B5 /* SignUpViewController.swift in Sources */,
+				658B3A171F14F0EF002A661E /* DeliveryViewController.swift in Sources */,
 				3F7144BB1EBA02AA00499A1D /* MenuViewController.swift in Sources */,
+				658B3A1B1F14F2A2002A661E /* paymentViewController.swift in Sources */,
 				65F99CBA1F0A226A006DF977 /* AppDelegate.swift in Sources */,
 				6568D9671F0E4AFD00670651 /* MyCartViewController.swift in Sources */,
 				657850B01EFCEE1A0055D0B5 /* AccountCreatedViewController.swift in Sources */,

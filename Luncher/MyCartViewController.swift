@@ -23,4 +23,7 @@ class MyCartViewController: UIViewController, UITableViewDataSource, UITableView
          let cell = tableView.dequeueReusableCell(withIdentifier: "cell_1", for: indexPath) as! MyCartTableViewCell
         return cell
     }
+    @IBAction func CheckoutButton(_ sender: Any) {
+        performSegue(withIdentifier: "showDeliverySegue", sender: nil)
+    }
 }
