@@ -12,6 +12,7 @@
 		3F7144C01EBA02AA00499A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7144BF1EBA02AA00499A1D /* Assets.xcassets */; };
 		3F7144C31EBA02AA00499A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7144C11EBA02AA00499A1D /* LaunchScreen.storyboard */; };
 		6516F2F31EDB262D00326C92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516F2F21EDB262D00326C92 /* DetailViewController.swift */; };
+		653640471F17A4F80035E250 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653640461F17A4F80035E250 /* SWRevealViewController.m */; };
 		654002A01ED5EA21008338D1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6540029F1ED5EA21008338D1 /* MenuTableViewCell.swift */; };
 		6568D9651F0E4A1F00670651 /* MyCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */; };
 		6568D9671F0E4AFD00670651 /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6568D9661F0E4AFD00670651 /* MyCartViewController.swift */; };
@@ -35,6 +36,9 @@
 		3F7144C21EBA02AA00499A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7144C41EBA02AA00499A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6516F2F21EDB262D00326C92 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
+		653640441F17A4F80035E250 /* Luncher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Luncher-Bridging-Header.h"; sourceTree = "<group>"; };
+		653640451F17A4F80035E250 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		653640461F17A4F80035E250 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6540029F1ED5EA21008338D1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		6568D9641F0E4A1F00670651 /* MyCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartTableViewCell.swift; sourceTree = "<group>"; };
 		6568D9661F0E4AFD00670651 /* MyCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,9 @@
 				658B3A161F14F0EF002A661E /* DeliveryViewController.swift */,
 				658B3A1A1F14F2A2002A661E /* paymentViewController.swift */,
 				658B3A181F14F284002A661E /* paymentTableViewCell.swift */,
+				653640451F17A4F80035E250 /* SWRevealViewController.h */,
+				653640461F17A4F80035E250 /* SWRevealViewController.m */,
+				653640441F17A4F80035E250 /* Luncher-Bridging-Header.h */,
 				6596003E1ED58C92006ED6E6 /* Main.storyboard */,
 				3F7144BF1EBA02AA00499A1D /* Assets.xcassets */,
 				3F7144C11EBA02AA00499A1D /* LaunchScreen.storyboard */,
@@ -160,6 +167,7 @@
 					3F7144B41EBA02AA00499A1D = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = L55V7BB6S4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,6 +258,7 @@
 			files = (
 				658B3A191F14F284002A661E /* paymentTableViewCell.swift in Sources */,
 				658E40D71EDBE83300E38917 /* RestoViewController.swift in Sources */,
+				653640471F17A4F80035E250 /* SWRevealViewController.m in Sources */,
 				657850AC1EFCD3B60055D0B5 /* SignUpViewController.swift in Sources */,
 				658B3A171F14F0EF002A661E /* DeliveryViewController.swift in Sources */,
 				3F7144BB1EBA02AA00499A1D /* MenuViewController.swift in Sources */,
@@ -385,12 +394,15 @@
 			baseConfigurationReference = C6FA38EFCA438ED9F503EEE2 /* Pods-Luncher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L55V7BB6S4;
 				INFOPLIST_FILE = Luncher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kh.edu.rupp.ckcc.Luncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Luncher/Luncher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -400,12 +412,14 @@
 			baseConfigurationReference = 34FC0EA4D4E1AC0F33859160 /* Pods-Luncher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L55V7BB6S4;
 				INFOPLIST_FILE = Luncher/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kh.edu.rupp.ckcc.Luncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Luncher/Luncher-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     @IBOutlet weak var TableView: UITableView!
     
     let foodimage = ["pizza", "fried rice"]
@@ -20,6 +21,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let Price = ["$15.99   (64000៛)", "$2.99   (12000៛)"]
     let Delivery = ["FREE Delivery in Phnom Penh", "FREE Delivery in Phnom Penh"]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        sideMenus()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (food.count)
@@ -40,6 +46,16 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "MenuSegue", sender: self)
+    }
+    
+    func sideMenus () {
+        if revealViewController() != nil {
+            sideMenuButton.target = revealViewController()
+            sideMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 285
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
     
     // MARK: - Prepare to paste data to next ViewController
