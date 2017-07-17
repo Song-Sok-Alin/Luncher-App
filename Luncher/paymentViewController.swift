@@ -11,7 +11,7 @@ import UIKit
 class paymentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let logo = ["visacard","mastercard","wing","paygo","smartluy","emoney","cash_on_deliver"]
-    let name = ["Visa Card","Master Card","Wing","PayGo","SmartLuy","eMoney","Cash on Deliver"]
+    let name = ["Visa Card","Master Card","Wing","PayGo","SmartLuy","eMoney","Cash on Delivery"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

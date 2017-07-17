@@ -35,8 +35,8 @@ class DetailViewController: UIViewController {
         FoodNameLabel.text = foodnameString
         IngredientLabel.text = ingredientString
         PriceLabel.text = priceString
-        DeliveryLabel.text = deliveryString
-        RestoLabel.text = restoString
+        //  DeliveryLabel.text = deliveryString
+        // RestoLabel.text = restoString
         
     }
 

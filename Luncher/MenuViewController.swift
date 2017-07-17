@@ -13,13 +13,24 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var sideMenuButton: UIBarButtonItem!
     @IBOutlet weak var TableView: UITableView!
     
-    let foodimage = ["pizza", "fried rice"]
-    let food = ["Pizza seafood extra cheesy sausage", "Fried rice with octupus and green bean"]
-    let ingredient = ["Shrimp, crab, onion, oyster, mushroom, sausage, extra cheese",
-                      "Rice, octopus, green bean, egg, olive oil, cucumber"]
-    let Restaurant = ["Pizza Company", "BrewHouse"]
-    let Price = ["$15.99   (64000៛)", "$2.99   (12000៛)"]
-    let Delivery = ["FREE Delivery in Phnom Penh", "FREE Delivery in Phnom Penh"]
+    let foodimage = ["magret-de-canard-miel",
+                     "fried rice",
+                     "pizza",
+                     "burger-set",
+                     "Frappucino",
+                     "Ham-Sandwich",
+                     "Koi",
+                     "salmon-spaghetti"]
+    let foodname =  ["Magret de canard","Seafood Fried rice","Pizza Ham","Zinger box","COFFEE Frappucino","Ham sandwich","Black Tea machiato","Salmon Spaghetti"]
+    let ingredient = ["canard, miel, pineapple",
+                      "brown rice, shrimp, octopus, corn, egg",
+                      "Ham, chesse, mushroom",
+                      "French fried, Pepsi, chicken burger",
+                      "  ",
+                      "Ham, cheese, lettuce, tomato",
+                      "  ",
+                      "Salmon, spaghetti, tomato sauce"]
+    let Price = ["$15", "$5","$20","$6.7","$3.1","$3","$1.6","$4.5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +39,17 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (food.count)
+        return foodimage.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath) as! MenuTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! MenuTableViewCell
         
         cell.FoodImage.image = UIImage(named: foodimage[indexPath.row])
-        cell.FoodName.text = food[indexPath.row]
-        cell.Resto.text = "Made by " + Restaurant[indexPath.row]
+        cell.FoodName.text = foodname[indexPath.row]
         cell.Price.text = Price[indexPath.row]
-        cell.Delivery.text = Delivery[indexPath.row]
+        cell.Ingredient.text = ingredient[indexPath.row]
         
         return cell
     }
@@ -65,20 +75,20 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             let indexPath = self.TableView.indexPathForSelectedRow!
             
-            let foodnameString = food[indexPath.row]
+            let foodnameString = foodname[indexPath.row]
             let ingredientString = ingredient[indexPath.row]
             let Foodimage = UIImage(named: foodimage[indexPath.row])
             let priceString = Price[indexPath.row]
-            let deliveryString = Delivery[indexPath.row]
-            let restoString = "Made by " + Restaurant[indexPath.row]
+            //  let deliveryString = Delivery[indexPath.row]
+            // let restoString = "Made by " + Restaurant[indexPath.row]
             
  
             upcoming.foodnameString = foodnameString
             upcoming.ingredientString = ingredientString
             upcoming.foodimage = Foodimage
             upcoming.priceString = priceString
-            upcoming.deliveryString = deliveryString
-            upcoming.restoString = restoString
+            // upcoming.deliveryString = deliveryString
+            //  upcoming.restoString = restoString
             
             self.TableView.deselectRow(at: indexPath, animated: true)
             

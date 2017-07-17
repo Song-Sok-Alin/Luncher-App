@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyCartTableViewCell: UITableViewCell {
+class MyCartTableViewCell: UITableViewCell, UITextFieldDelegate {
 
     @IBOutlet weak var restoLabel: UILabel!
     @IBOutlet weak var foodNameLabel: UILabel!
@@ -16,5 +16,16 @@ class MyCartTableViewCell: UITableViewCell {
     @IBOutlet weak var deliveryLabel: UILabel!
     @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var qtyTextField: UITextField!
+    
+    // Hide keyboard when user touch outside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.contentView.endEditing(true)
+    }
+    
+    // Hide keyboard when user press return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        qtyTextField.resignFirstResponder()
+        return true
+    }
     
 }

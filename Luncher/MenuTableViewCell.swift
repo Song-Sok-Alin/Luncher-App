@@ -12,9 +12,9 @@ class MenuTableViewCell: UITableViewCell {
 
     @IBOutlet weak var FoodImage: UIImageView!
     @IBOutlet weak var FoodName: UILabel!
-    @IBOutlet weak var Resto: UILabel!
+    // @IBOutlet weak var Resto: UILabel!
     @IBOutlet weak var Price: UILabel!
-    @IBOutlet weak var Delivery: UILabel!
+    @IBOutlet weak var Ingredient: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

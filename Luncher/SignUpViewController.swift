@@ -10,7 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class SignUpViewController: UIViewController, FBSDKLoginButtonDelegate  {
+class SignUpViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate  {
    
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var emailTextField: UITextField!
@@ -29,6 +29,10 @@ class SignUpViewController: UIViewController, FBSDKLoginButtonDelegate  {
             print("user already login")
             performSegue(withIdentifier: "showAccountActivate", sender: nil)
         }
+        
+        self.emailTextField.delegate = self
+        self.PhoneNumberTextField.delegate = self
+        self.passwordTextField.delegate = self
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
@@ -51,6 +55,19 @@ class SignUpViewController: UIViewController, FBSDKLoginButtonDelegate  {
     }
     @IBAction func loginButton(_ sender: Any) {
         performSegue(withIdentifier: "showLogin", sender: nil)
+    }
+    
+    // Hide keyboard when user touch outside keyboard 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    // Hide keyboard when user press return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        PhoneNumberTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return (true)
     }
     
 }
