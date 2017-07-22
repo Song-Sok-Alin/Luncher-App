@@ -708,11 +708,11 @@
                         <viewControllerLayoutGuide type="bottom" id="vQg-dH-qlg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1V8-sJ-heA">
-                        <rect key="frame" x="0.0" y="64" width="375" height="636"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tn-SH-K99">
-                                <rect key="frame" x="10" y="576" width="355" height="50"/>
+                                <rect key="frame" x="10" y="543" width="355" height="50"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.90915017659999997" blue="0.58900938199999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mA4-Hh-ONu"/>
@@ -736,7 +736,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MMV-Pn-eZX">
-                                <rect key="frame" x="16" y="50" width="343" height="526"/>
+                                <rect key="frame" x="16" y="50" width="343" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell_1" rowHeight="156" id="iLX-Vz-LIX" customClass="MyCartTableViewCell" customModule="Luncher" customModuleProvider="target">
@@ -878,7 +878,7 @@
                         <viewControllerLayoutGuide type="bottom" id="auS-YU-5Fp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ll0-g0-UUT">
-                        <rect key="frame" x="0.0" y="64" width="375" height="636"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your items will deliver to : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKf-5o-Vfo">
@@ -1031,11 +1031,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3Dp-lk-7uf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9ee-Wy-Qns">
-                        <rect key="frame" x="0.0" y="64" width="375" height="636"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GyI-Jn-vji">
-                                <rect key="frame" x="0.0" y="70" width="375" height="522"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="489"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="paymentCell" rowHeight="60" id="0Gi-wQ-wTv" customClass="paymentTableViewCell" customModule="Luncher" customModuleProvider="target">
@@ -1862,6 +1862,6 @@
         <image name="store" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MO5-pq-RP0"/>
+        <segue reference="7Ar-lC-VAP"/>
     </inferredMetricsTieBreakers>
 </document>
